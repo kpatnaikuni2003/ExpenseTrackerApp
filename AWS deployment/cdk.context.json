@@ -1,0 +1,57 @@
+{
+  "availability-zones:account=676206908632:region=ap-south-1": [
+    "ap-south-1a",
+    "ap-south-1b",
+    "ap-south-1c"
+  ],
+  "ssm:account=676206908632:parameterName=VpcId:region=ap-south-1": "vpc-0bfddf6f18acb616a",
+  "ssm:account=676206908632:parameterName=PrivateSubnet-0:region=ap-south-1": "subnet-0e1c71f4d545c8e0a",
+  "ssm:account=676206908632:parameterName=PrivateSubnet-1:region=ap-south-1": "subnet-0180b71dfa6a07f14",
+  "ssm:account=676206908632:parameterName=PublicSubnet-0:region=ap-south-1": "subnet-099b31b74fae5aff5",
+  "ssm:account=676206908632:parameterName=PublicSubnet-1:region=ap-south-1": "subnet-0f7d03491d92bab2b",
+  "vpc-provider:account=676206908632:filter.vpc-id=vpc-0bfddf6f18acb616a:region=ap-south-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0bfddf6f18acb616a",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "ownerAccountId": "676206908632",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "private-subnet",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0e1c71f4d545c8e0a",
+            "cidr": "10.0.2.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-046970d61cf734879"
+          },
+          {
+            "subnetId": "subnet-0180b71dfa6a07f14",
+            "cidr": "10.0.3.0/24",
+            "availabilityZone": "ap-south-1b",
+            "routeTableId": "rtb-071ffaf27f4d8aab5"
+          }
+        ]
+      },
+      {
+        "name": "public-subnet",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-099b31b74fae5aff5",
+            "cidr": "10.0.0.0/24",
+            "availabilityZone": "ap-south-1a",
+            "routeTableId": "rtb-05be248e2b5254052"
+          },
+          {
+            "subnetId": "subnet-0f7d03491d92bab2b",
+            "cidr": "10.0.1.0/24",
+            "availabilityZone": "ap-south-1b",
+            "routeTableId": "rtb-05fada64e1b53af2e"
+          }
+        ]
+      }
+    ]
+  },
+  "ssm:account=676206908632:parameterName=ExpenseTrackerServicesNLB:region=ap-south-1": "Expens-Datab-MIAuLDBAHodE-3741fef806dff882.elb.ap-south-1.amazonaws.com"
+}
